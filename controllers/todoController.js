@@ -60,7 +60,7 @@ exports.updateTodo = async (req, res) => {
         title: req.body.title,
         description: req.body.description,
         completed: req.body.completed,
-        updateDt: Date.now(),
+        updatedDt: Date.now(),
       },
       { new: true, runValidators: true }
     );
